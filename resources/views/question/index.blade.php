@@ -1,4 +1,4 @@
-@extends('layouts.main',['title' => 'category'])
+@extends('layouts.main',['title' => 'question'])
 @section('content')
     <div class="container mt-3">
         <a href="{{ route('question.create') }}" class="btn btn-primary">

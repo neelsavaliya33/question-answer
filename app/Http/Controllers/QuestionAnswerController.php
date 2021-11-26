@@ -138,6 +138,6 @@ class QuestionAnswerController extends Controller
     {
         $question->answers()->delete();
         $question->delete();
-        return redirect(route('category.index'))->with('success', 'question deleted successfully');
+        return redirect(route('question.index'))->with('success', 'question deleted successfully');
     }
 }

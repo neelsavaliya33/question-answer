@@ -1,4 +1,4 @@
-@extends('layouts.main',['title' => 'category'])
+@extends('layouts.main',['title' => 'category | edit'])
 @section('content')
     <div class="container">
         <form id="categoryForm" data-id="0">

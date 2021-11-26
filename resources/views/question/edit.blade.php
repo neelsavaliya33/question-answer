@@ -1,4 +1,4 @@
-@extends('layouts.main',['title' => 'category'])
+@extends('layouts.main',['title' => 'question | edit'])
 
 @section('content')
     <div class="container">

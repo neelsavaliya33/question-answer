@@ -54,13 +54,13 @@
                         @endif"" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @if (request()->route()->getName() == 'category.index')
+                        <a class="nav-link @if (request()->route()->getName() == 'category.index' || request()->route()->getName() == 'category.create' || request()->route()->getName() == 'category.edit')
                             active
                         @endif"
                             href="{{ route('category.index') }}">Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @if (request()->route()->getName() == 'question.index')
+                        <a class="nav-link @if (request()->route()->getName() == 'question.index' || request()->route()->getName() == 'question.create' || request()->route()->getName() == 'question.edit')
                             active
                         @endif"" href="
                             {{ route('question.index') }}">Question</a>
