@@ -23,7 +23,9 @@
                             <th scope="row">{{ $loop->index + 1 }}</th>
                             <td>{{ $question->question }}</td>
                             @foreach ($question->answers as $answer)
-                                <td>{{ $answer->answer }}</td>
+                                <td @if ($answer->is_correct)
+                                    class="bg-success"
+                                @endif>{{ $answer->answer }}</td>
                             @endforeach
                             <td>
                                 <a href="{{ route('question.edit', $question->id) }}" class="btn btn-primary">Edit</a>
